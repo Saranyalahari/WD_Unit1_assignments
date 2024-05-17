@@ -4,39 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    @keyframes changecolor{
-    from {background-color: red;
-    left: 100px;
-    }
-    to {background-color: yellow;
-    left: 1400px;
-    }
-}   
+    <style>
 
-    div{
-        width: 100px;
-        height: 100px;
-        left: 100px;
-        position: relative;
-        background-color:red;
-        border-radius: 50%;
-        animation-name:changecolor;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-delay: 1s;
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color:black;
+            border-radius: 50%;
+            animation-name:moving;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
 
-    }
-</style>
+        }
+        @keyframes moving{
+                0% { background-color: blue; left: 0px; top: 0px; }
+                25% { background-color: green; left: 1440px; top: 0px; }
+                50% { background-color: yellow; left: 1440px; top: 720px; }
+                75% { background-color: orange; left: 0px; top: 720px; }
+                100% { background-color: red; left: 0px; top: 0px; }
+            }
+
+    </style>
 </head>
 <body>
-    <div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-ANIMATION
-    </div>  
+    <div></div> <!-- Added the div element here -->
 </body>
 </html>
